@@ -18,7 +18,7 @@ namespace WowLib
 				if (Compare((BYTE*)(dwAddress + i), bMask, szMask))  return (DWORD)(dwAddress + i);
 			return 0;
 		}
-
+ 
 		typedef HRESULT(WINAPI* tEndScene) (LPDIRECT3DDEVICE9 pDevice);
 		extern tEndScene oEndScene;
 

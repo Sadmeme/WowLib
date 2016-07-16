@@ -1,0 +1,18 @@
+﻿Build started 2016-07-16 16:30:06.
+     1>Project "C:\Users\Luckelelle\documents\visual studio 2013\Projects\Wow - Luciz Style\WowLib\WowLib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\WowLib\hooks\hooks.cpp src\WowLib\wow\gamefunctions.cpp
+         hooks.cpp
+         gamefunctions.cpp
+     1>src\WowLib\wow\gamefunctions.cpp(220): warning C4244: 'return' : conversion from 'int' to 'float', possible loss of data
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Luckelelle\documents\visual studio 2013\Projects\Wow - Luciz Style\Release\WowLib.lib" /NOLOGO /LTCG Release\drawing.obj
+         Release\hooks.obj
+         Release\gamefunctions.obj
+         lib\detours.lib
+         WowLib.vcxproj -> C:\Users\Luckelelle\documents\visual studio 2013\Projects\Wow - Luciz Style\Release\WowLib.lib
+     1>Done Building Project "C:\Users\Luckelelle\documents\visual studio 2013\Projects\Wow - Luciz Style\WowLib\WowLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.87

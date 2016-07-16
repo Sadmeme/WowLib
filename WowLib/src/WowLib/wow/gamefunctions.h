@@ -17,7 +17,7 @@ namespace WowLib
 		int GetSpellCooldown(char* spellName);
 		bool IsInRange(char* spellName, char* who = "target");
 		bool CastSpell(char* spellName, bool skipGCD = false, char* who = "target", bool noCD = false, bool ignoreRange = false);
-		bool CastSpellOnSelf(char* spellName, bool skipGCD = false);
+		bool CastSpellOnSelf(char* spellName, bool skipGCD = false, bool noCD =	false);
 		int GetBuffCount(char* who, char* buffName, char* rank = WOWLIB_BUFF);
 		bool HasBuff(char* who, char* buffName);
 		bool HasDebuff(char* who, char* debuffName);

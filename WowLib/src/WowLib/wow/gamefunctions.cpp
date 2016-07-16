@@ -113,7 +113,7 @@ namespace WowLib
 			if (!skipGCD && curTime < gcd)
 				return false;
 
-			if (strlen(lastSpell) > 0)
+			if (!skipGCD && strlen(lastSpell) > 0)
 			{
 				int end = CastingEnd("player", lastSpell) * 1000;
 				if (curTime < end)
@@ -139,9 +139,9 @@ namespace WowLib
 			lastSpell = spellName;
 		}
 
-		bool CastSpellOnSelf(char* spellName, bool skipGCD)
+		bool CastSpellOnSelf(char* spellName, bool skipGCD, bool noCD)
 		{
-			return CastSpell(spellName, skipGCD, "player");
+			return CastSpell(spellName, skipGCD, "player", noCD, true);
 		}
 
 		int GetBuffCount(char* who, char* buffName, char* rank)
