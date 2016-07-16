@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{228c917a-3082-4a06-9355-49b6205b1375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\game">
+      <UniqueIdentifier>{d36f5d8b-517e-4c16-81d8-543265da2d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\functions">
+      <UniqueIdentifier>{0095c7f2-de73-4bcb-874c-6e6861e40ff5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\WowLib\WowLib.h" />
+    <ClInclude Include="src\WowLib\wow\gameclasses.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WowLib\hooks\detours\detours.h" />
+    <ClInclude Include="src\WowLib\hooks\detours\detver.h" />
+    <ClInclude Include="src\WowLib\hooks\hooks.h" />
+    <ClInclude Include="src\WowLib\wow\gamefunctions.h" />
+    <ClInclude Include="src\WowLib\wow\gameoffsets.h" />
+    <ClInclude Include="src\WowLib\hooks\drawing\drawing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\WowLib\hooks\drawing\drawing.cpp" />
+    <ClCompile Include="src\WowLib\hooks\hooks.cpp" />
+    <ClCompile Include="src\WowLib\wow\gamefunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\detours.lib" />
+  </ItemGroup>
+</Project>
